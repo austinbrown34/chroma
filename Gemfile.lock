@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     chroma-db (0.6.0)
-      dry-monads (~> 1.6)
+      dry-monads (~> 1.4)
       ruby-next (>= 0.15.0)
 
 GEM
@@ -15,13 +15,12 @@ GEM
     crack (0.4.5)
       rexml
     diff-lcs (1.5.0)
-    dry-core (1.0.0)
+    dry-core (0.9.1)
       concurrent-ruby (~> 1.0)
       zeitwerk (~> 2.6)
-    dry-monads (1.6.0)
+    dry-monads (1.4.0)
       concurrent-ruby (~> 1.0)
-      dry-core (~> 1.0, < 2)
-      zeitwerk (~> 2.6)
+      dry-core (~> 0.7)
     hashdiff (1.0.1)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
@@ -85,7 +84,7 @@ GEM
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    zeitwerk (2.6.8)
+    zeitwerk (2.6.11)
 
 PLATFORMS
   arm64-darwin-22
@@ -93,6 +92,7 @@ PLATFORMS
 
 DEPENDENCIES
   chroma-db!
+  dry-monads (= 1.4)
   minitest (~> 5.0)
   rake (~> 13.0)
   rbs (~> 3.1)
@@ -102,4 +102,4 @@ DEPENDENCIES
   webmock (~> 3.18, >= 3.18.1)
 
 BUNDLED WITH
-   2.4.12
+   2.4.14
